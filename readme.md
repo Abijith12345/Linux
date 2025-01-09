@@ -38,7 +38,7 @@ User management in Linux:
     1.  This file will be avilable on  /etc/passwd
     2.  username : x : user id : user group id : : /home/username : /bin/bash    ----- This is the format of the passwd file
     
-    ![alt text](image-1.png)
+![alt text](image-1.png)
 
 ### Switch user 
 
@@ -46,4 +46,17 @@ User management in Linux:
         su <username>
 
     Ex: su abijith
+
+### change the user id:
+    syntax
+    usermod  -u <new_id> <username>
+
+    U- Represent uid (userid)
+
+### change the user group 
+
+    usermod -g <new group id> <username>
+
+    ex: usermod -g 1001 abi    - so the user group will replce with this value 
+
 
