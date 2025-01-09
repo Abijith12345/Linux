@@ -1,21 +1,82 @@
 # LINUX
 
 ![alt text](image.png)
+### Introduction to Linux
 
-## 1. Kernel:
-Kernel is the main core component if Linux, it controls the activity of other hardware components. It visualizes the common hardware resources and provide each process with necessary virtual resources. It makes the process to wait in the ready queue and execute in consequently to avoid any kind of conflict.
+History and Evolution of Linux
+Open Source Philosophy and GPL
+Linux Distributions (Ubuntu, CentOS, RHEL, etc.)
+Installation of Linux OS
+Linux Desktop Environments (GNOME, KDE, XFCE)
 
-## 2. System Library:
-System libraries are some predefined functions by using which any application programs or system utilities can access kernel’s features. These libraries are the foundation upon which any software can be built.
+### Basic Linux Commands
 
-## 3. Shell:
-Shell can be determined as the interface to the kernel, which hides the internal execution of functions of kernel from the user. Users can just enter the commend and using the kernel’s function that specific task is performed accordingly.
+File and Directory Management (ls, cd, mkdir, rm, mv, cp, etc.)
+File Viewing and Manipulation (cat, more, less, head, tail, nano, vim, etc.)
+File Permissions and Ownership (chmod, chown, chgrp)
+File Searching (find, locate, grep)
+Viewing System Information (uname, uptime, df, du, free)
 
-## 4. Hardware Layer:
-Hardware layer of Linux is the lowest level of operating system track. It is plays a vital role in managing all the hardware components. It includes device drivers, kernel functions, memory management, CPU control, and I/O operations. This layer generalizes hard complexity, by providing an interface for software by assuring proper functionality of all the components.
+### Linux Filesystem
 
-## 5. System utility:
-System utilities are the commend line tools that preforms various tasks provided by user to make system management and administration better. These utilities enables user to perform different tasks, such as file management, system monitoring, network configuration, user management etc.
+Filesystem Hierarchy Standard (FHS)
+Understanding Root Directory and Subdirectories
+Partitioning and Mounting Drives (mount, umount, df, blkid, lsblk)
+Disk Management (fdisk, parted, mkfs, fsck)
+Swap Space Configuration
+
+### User Management
+
+User and Group Management (adduser, useradd, passwd, usermod, groupadd)
+Switching Users (su, sudo)
+Managing User Permissions and Groups
+Configuring Login and Access Control (/etc/passwd, /etc/shadow, /etc/group)
+
+### Process and Task Management
+
+Understanding Processes (ps, top, htop, pidof, pgrep)
+Process Priority Management (nice, renice, kill, pkill)
+Scheduling Tasks (cron, at, systemd timers)
+Background and Foreground Tasks (&, fg, bg, jobs)
+
+### Networking in Linux
+
+Basics of Networking (ping, ifconfig, ip, netstat, ss)
+Configuring Network Interfaces
+Using SSH for Remote Access (ssh, scp, sftp)
+Managing Hosts and DNS (/etc/hosts, /etc/resolv.conf)
+Configuring Firewalls (iptables, firewalld)
+
+### Package Management
+
+Package Management Tools (apt, yum, dnf, zypper)
+Installing, Updating, and Removing Software
+Using Repositories
+Compiling Software from Source
+
+### Shell Scripting
+
+Basics of Shell Scripting
+Variables, Loops, and Conditional Statements
+Creating and Running Scripts
+Automation with Shell Scripts
+Understanding Shebang (#!)
+
+### System Administration
+
+Boot Process and GRUB Configuration
+System Logs and Log Management (journalctl, /var/log/)
+Monitoring System Performance (vmstat, iostat, sar)
+Backup and Restore (rsync, tar, dd)
+
+### Security and Permissions
+
+Understanding Linux File Permissions
+Firewall Configuration (ufw, iptables)
+Securing SSH
+System Hardening Techniques
+Understanding SELinux and AppArmor
+
 
 
 
@@ -59,4 +120,8 @@ User management in Linux:
 
     ex: usermod -g 1001 abi    - so the user group will replce with this value 
 
+### Remove user
 
+    sudo userdel -r <username>
+
+ 
