@@ -17,3 +17,33 @@ Hardware layer of Linux is the lowest level of operating system track. It is pla
 ## 5. System utility:
 System utilities are the commend line tools that preforms various tasks provided by user to make system management and administration better. These utilities enables user to perform different tasks, such as file management, system monitoring, network configuration, user management etc.
 
+
+
+User management in Linux:
+
+#### useradd : - add new user
+
+    useradd <username>
+    ex:
+        useradd abi
+
+#### Set password for user
+
+    passwd <username>
+    ex:
+        passwd abi
+
+#### user configuration file - this file contains the information about  user format
+
+    1.  This file will be avilable on  /etc/passwd
+    2.  username : x : user id : user group id : : /home/username : /bin/bash    ----- This is the format of the passwd file
+    
+    ![alt text](image-1.png)
+
+### Switch user 
+
+    <b> Synatx :<\b>
+        su <username>
+
+    Ex: su abijith
+
